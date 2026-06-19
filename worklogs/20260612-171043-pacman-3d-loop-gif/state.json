@@ -1,0 +1,24 @@
+{
+  "id": "20260612-171043-pacman-3d-loop-gif",
+  "epic": "design-assets",
+  "status": "completed",
+  "phases": {
+    "P": { "completed": true },
+    "A": { "completed": true },
+    "B": { "completed": true },
+    "C": { "completed": true },
+    "D": { "completed": true }
+  },
+  "source": "user-request (2026-06-12 대화: 3D 버전 제작 + 2D READY! 문구 교체)",
+  "scope": [
+    "design/deliverables/animation/make_pacman_loop.py",
+    "design/deliverables/animation/make_pacman_loop_3d.py",
+    "design/deliverables/animation/pacman_ulog_loop.gif",
+    "design/deliverables/animation/pacman_ulog_loop_3d.gif"
+  ],
+  "checks": {
+    "render_2d": "pass (104 frames)",
+    "render_3d": "pass (96 frames)",
+    "visual_review": "pass (frame extraction)"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "20260610-140614-calendar-analysis-notch-fix",
+  "epic": "유로그(avoha) 프론트: Calendar 팝업 헤더 깨짐 + Analysis 직접모드 노치 가림 수정",
+  "status": "done",
+  "phases": {
+    "P": "completed",
+    "A": "completed",
+    "B": "completed",
+    "C": "completed",
+    "D": "completed"
+  },
+  "source": {
+    "type": "user_report",
+    "reports": [
+      "Calendar 날짜 팝업 스크롤 시 날짜 위쪽이 살짝 깨짐",
+      "Analysis 직접 모드에서 맨 위 날짜 범위가 목업 노치에 가려짐"
+    ]
+  },
+  "scope": [
+    "frontend UI fixes (Calendar sticky 헤더, Analysis 헤더 패딩)"
+  ],
+  "checks": {
+    "targeted_tests": "pass: 45/45 (Calendar 26, Analysis 19)",
+    "typecheck": "pass: tsc --noEmit exit 0",
+    "frontend_build": "pass: tsc -b && vite build",
+    "browser_smoke": "dev server 200 on / and /analysis; 시각 확인은 사용자 측"
+  },
+  "commit": "268c784",
+  "deploy": {
+    "method": "Railway auto-deploy on push to main",
+    "pushed": "977c214..268c784",
+    "verified": false
+  }
+}

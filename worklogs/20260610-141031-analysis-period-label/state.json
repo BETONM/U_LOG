@@ -1,0 +1,37 @@
+{
+  "id": "20260610-141031-analysis-period-label",
+  "epic": "유로그(avoha) 감정분석: 기간 라벨을 '6월 2째주'/'6월' 형식으로 표시",
+  "status": "done",
+  "phases": {
+    "P": "completed",
+    "A": "completed",
+    "B": "completed",
+    "C": "completed",
+    "D": "completed"
+  },
+  "source": {
+    "type": "user_request",
+    "request": "주간/월간 라벨을 '이번주'/'이번달' 대신 '6월 2째주'/'6월' 형식으로"
+  },
+  "scope": [
+    "frontend: Analysis 기간 라벨 헬퍼 + 테스트"
+  ],
+  "checks": {
+    "targeted_tests": "pass: 22/22 (신규 3)",
+    "typecheck": "pass: tsc --noEmit exit 0",
+    "frontend_build": "pass: tsc -b && vite build"
+  },
+  "commit": "0046066",
+  "deploy": {
+    "method": "Railway auto-deploy on push to main",
+    "pushed": "268c784..0046066",
+    "verified": false
+  },
+  "revisions": [
+    {
+      "at": "20260610-1414",
+      "note": "월간 YYYY-MM, 주간 N주차 로 포맷 변경",
+      "commit": "0046066"
+    }
+  ]
+}
